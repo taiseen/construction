@@ -1,4 +1,58 @@
 .about {
-    min-height: 100vh;
 
+    .row {
+        display    : flex;
+        align-items: center;
+        flex-wrap  : wrap;
+        gap        : 3rem;
+
+        .video {
+            flex: 1 1 41rem;
+
+            video {
+                width: 100%;
+            }
+        }
+
+        .content {
+            flex: 1 1 41rem;
+
+            h3 {
+                @include title(4rem);
+            }
+
+            p {
+                @include paragraph(1.8rem);
+                padding: 1rem 0;
+            }
+        }
+
+
+    }
+
+    .box-container {
+        margin-top: 3rem;
+        @include grid(16rem);
+        align-items: flex-end;
+
+        .box {
+            padding         : 3rem 2rem;
+            text-align      : center;
+            background-color: var(--lightBg);
+
+            h3 {
+                @include title(4rem);
+
+                span {
+                    // color      : var(--themeColor);
+                    color: #ff9100;
+                }
+            }
+
+            p {
+                @include paragraph(1.5rem);
+                padding-top: 0.5rem;
+            }
+        }
+    }
 }

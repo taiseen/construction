@@ -47,6 +47,10 @@ window.addEventListener('scroll', () => {
     loginForm.classList.remove('userClick');
 
 
+
+    /*****************************************************************
+    ******************************************************************
+    ******************************************************************/
     // this code Snippet set inside Windows SCROLL Event Listener 
     // auto select menu according to screen scrolling
     sections.forEach(section => {
@@ -64,7 +68,6 @@ window.addEventListener('scroll', () => {
             });
         };
     });
-
 });
 
 
@@ -104,3 +107,55 @@ let homeSlider = new Swiper('.home-slider', {
     // },
 
 });
+
+
+
+/*****************************************************************
+******************************************************************
+******************************************************************/
+document.addEventListener('DOMContentLoaded', () => {
+
+    function counter(id, start, end, duration) {
+
+        let obj = document.getElementById(id);
+        let current = start;
+        let range = end - start;
+        let increment = end > start ? 1 : -1;
+        let step = Math.abs(Math.floor(duration / range));
+
+        let timer = setInterval(() => {
+
+            current += increment;
+            obj.innerHTML = current;
+
+            if (current == end) {
+                obj.innerHTML += "<span>+</spam>"
+                clearInterval(timer);
+            }
+
+        }, step);
+    }
+    counter('count1', 0, 10, 3000);
+    counter('count2', 0, 1500, 3000);
+    counter('count3', 0, 790, 6000);
+    counter('count4', 0, 450, 6000);
+});
+
+
+/*****************************************************************
+******************************************************************
+******************************************************************/
+
+// DISABLE the RIGHT CLICK for viewing the ==> View Page Source Code
+// document.addEventListener('contextmenu', (e) => {
+//     e.preventDefault();
+// }, false);
+
+
+// // DISABLE SHORTCUT KEY
+// document.addEventListener('keydown', (e) => {
+//     if (e.ctrlKey || e.keyCode == 123) {
+//         e.stopPropagation();
+//         e.preventDefault();
+//     }
+// }, false);

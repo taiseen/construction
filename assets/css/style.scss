@@ -70,7 +70,12 @@ section,
     }
 }
 
-.heading {}
+.heading {
+    @include title(3rem);
+    margin-bottom: 3rem;
+    padding-left : 1rem;
+    border-left  : 1rem solid var(--themeColor);
+}
 
 .btn {
     display         : inline-block;

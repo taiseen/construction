@@ -1,3 +1,41 @@
-.services{
-    min-height: 100vh;
+.services {
+    background-color: var(--lightBg);
+
+    .box-container {
+
+        @include grid(30rem);
+
+        .box {
+
+            padding         : 3rem;
+            text-align      : center;
+            background-color: var(--white);
+            box-shadow      : var(--boxShadow);
+            border          : var(--border);
+            cursor          : pointer;
+            
+            
+            &:hover {
+                box-shadow      : none;
+            }
+
+            &:hover img{
+                transform: translateY(-1.5rem);
+            }
+
+            img {
+                height: 10rem;
+                transition      : .2s linear;
+            }
+
+            h3 {
+                margin: 1rem 0;
+                @include title(1.7rem);
+            }
+
+            p {
+                @include paragraph(1.4rem);
+            }
+        }
+    }
 }
