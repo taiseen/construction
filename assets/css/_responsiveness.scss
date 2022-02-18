@@ -1,0 +1,27 @@
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }   
+
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    // mobile navigation start from here...
+
+
+    // transform       : scaleY(0);
+    // transform-origin: top;
+
+    // &.user-click-at-search {
+    //     transform: scaleY(1);
+    // }
+}
+
+@media (max-width: 450px) {
+    
+
+}

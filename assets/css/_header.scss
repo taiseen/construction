@@ -1,0 +1,39 @@
+.header {
+    position       : sticky;
+    top            : 0;
+    left           : 0;
+    right          : 0;
+    padding        : 1.5rem 10%;
+    box-shadow     : var(--boxShadow);
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    z-index        : 100;
+
+    .logo {
+        @include title(2.5rem);
+
+        span {
+            color: var(--themeColor);
+        }
+    }
+
+    .navbar a {
+        @include title(2rem);
+        margin: 0 1rem;
+
+        &.active,
+        &:hover {
+            color: var(--themeColor);
+        }
+    }
+
+    .icons div {
+        @include iconBox();
+        margin-left: 0.5rem;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+}

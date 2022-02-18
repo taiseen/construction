@@ -1,0 +1,40 @@
+@mixin grid($value) {
+    display              : grid;
+    grid-template-columns: repeat(auto-fit, minmax($value, 1fr));
+    gap                  : 2rem;
+}
+
+@mixin flex {
+    display  : flex;
+    flex-wrap: wrap;
+    gap      : 1rem;
+}
+
+@mixin title($size) {
+    font-size     : $size;
+    color         : var(--black);
+    text-transform: capitalize;
+}
+
+@mixin paragraph($size) {
+    font-size  : $size;
+    color      : var(--lightColor);
+    line-height: 1.2;
+}
+
+@mixin iconBox() {
+    height          : 5rem;
+    width           : 5rem;
+    line-height     : 5rem;
+    font-size       : 2rem;
+    text-align      : center;
+    color           : var(--black);
+    background-color: var(--lightBg);
+    cursor          : pointer;
+
+    &:hover {
+        color           : var(--white);
+        background-color: var(--black);
+    }
+
+}
