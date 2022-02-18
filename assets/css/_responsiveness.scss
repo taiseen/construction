@@ -3,6 +3,11 @@
     .header {
         padding: 1.5rem 2rem;
     }
+
+    section,
+    .slide {
+        padding: 3rem 5%;
+    }
 }
 
 @media (max-width: 991px) {
@@ -10,8 +15,9 @@
         font-size: 55%;
     }
 
-    section {
-        padding: 2rem;
+    section,
+    .slide {
+        padding: 3rem 2rem;
     }
 
     .header {
@@ -52,6 +58,18 @@
         .search-form,
         .login-form {
             width: 90%;
+        }
+    }
+
+    .home .slide {
+        justify-content: center;
+
+        .content {
+            text-align: center;
+
+            h3 {
+                font-size: 3rem;
+            }
         }
     }
 }

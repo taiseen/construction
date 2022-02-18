@@ -1,3 +1,62 @@
-.home{
-    
+.home {
+    padding: 0;
+
+    .slide {
+        min-height         : 60rem;
+        display            : flex;
+        align-items        : center;
+        position           : relative;
+        background-size    : cover !important;
+        background-position: center !important;
+
+        &::before {
+            content   : "";
+            position  : absolute;
+            top       : 0;
+            left      : 0;
+            height    : 100%;
+            width     : 100%;
+            background: linear-gradient(90deg, var(--white), transparent);
+        }
+
+        .content {
+            width   : 50rem;
+            position: relative;
+
+            h3 {
+                @include title(6rem);
+                text-transform: uppercase;
+            }
+
+            p {
+                @include paragraph(1.6rem);
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top             : initial;
+        bottom          : 3rem;
+        left            : initial;
+        right           : 0;
+        height          : 7rem;
+        width           : 7rem;
+        line-height     : 7rem;
+        background-color: var(--white);
+
+        &:hover {
+            background-color: var(--themeColor);
+        }
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        @include fontStyle(3rem, var(--black));
+    }
+
+    .swiper-button-prev {
+        right: 7rem;
+    }
 }

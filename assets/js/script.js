@@ -9,8 +9,10 @@ const closeInfoBtn = document.getElementById('close-info-btn');
 const navBar = document.querySelector('.navbar');
 const searchForm = document.querySelector('.search-form');
 const loginForm = document.querySelector('.login-form');
-const contactInfo  = document.querySelector('.contact-info ');
+const contactInfo = document.querySelector('.contact-info ');
 
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('header .navbar a');
 
 
 menuBtn.addEventListener('click', () => {
@@ -34,75 +36,71 @@ loginBtn.addEventListener('click', () => {
 
 infoBtn.addEventListener('click', () => {
     contactInfo.classList.add('userClick');
-    // searchForm.classList.remove('userClick');
-    // loginForm.classList.remove('userClick');
 });
 closeInfoBtn.addEventListener('click', () => {
     contactInfo.classList.remove('userClick');
-    // searchForm.classList.remove('userClick');
-    // loginForm.classList.remove('userClick');
 });
 
 window.addEventListener('scroll', () => {
     navBar.classList.remove('userClick');
     searchForm.classList.remove('userClick');
     loginForm.classList.remove('userClick');
+
+
+    // this code Snippet set inside Windows SCROLL Event Listener 
+    // auto select menu according to screen scrolling
+    sections.forEach(section => {
+
+        let top = window.scrollY;
+        let height = section.offsetHeight;
+        let offset = section.offsetTop - 150;
+        let id = section.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                document.querySelector('header .navbar a[href*=' + id + ']').classList.add('active');
+            });
+        };
+    });
+
 });
 
-
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header .navbar a');
-
-// auto select menu according to screen scrolling
-sections.forEach(section => {
-
-    let top = window.scrollY;
-    let height = section.offsetHeight;
-    let offset = section.offsetTop - 150;
-    let id = section.getAttribute('id');
-
-    if (top >= offset && top < offset + height) {
-
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            document.querySelector('header .navbar a[href*=' + id + ']').classList.add('active');
-        });
-    };
-});
 
 
 
 // swiper-slider functionality... 
 
-let swiper = new Swiper('.reviews-slider', {
+let homeSlider = new Swiper('.home-slider', {
 
     loop: true,
     grabCursor: true,
     spaceBetween: 20,
 
     autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
     },
 
-    pagination: {
-        el: '.swiper-pagination',
-        type: "fraction",
-        clickable: true,
-    },
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     type: "fraction",
+    //     clickable: true,
+    // },
 
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
 
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-    },
+    // breakpoints: {
+    //     0: {
+    //         slidesPerView: 1,
+    //     },
+    //     768: {
+    //         slidesPerView: 2,
+    //     },
+    // },
 
 });

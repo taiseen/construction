@@ -19,7 +19,7 @@
 @mixin paragraph($size) {
     font-size  : $size;
     color      : var(--lightColor);
-    line-height: 1.2;
+    line-height: 2;
 }
 
 @mixin fontStyle($size, $color) {
