@@ -198,17 +198,16 @@
 
             i {
                 @include iconBox();
-                margin-bottom: 0.5rem;
             }
 
             h3 {
                 @include title(2rem);
-                padding: 1rem 0 .1rem;
+                margin: .5rem 0;
             }
 
             p {
                 @include paragraph(1.5rem);
-                line-height: 1.5;
+                line-height: 1.3 !important;
             }
 
             .email {

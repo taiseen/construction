@@ -152,7 +152,7 @@ let homeSlider = new Swiper('.home-slider', {
     grabCursor: true,
     spaceBetween: 20,
     autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
     },
     navigation: {
@@ -185,6 +185,66 @@ let clientsReviewsSlider = new Swiper('.reviews-slider', {
         },
         991: {
             slidesPerView: 3,
+        },
+    },
+});
+
+
+
+let blogSlider = new Swiper('.blogs-slider', {
+
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: "fraction",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+
+let clientLogoSlider = new Swiper('.logo-slider', {
+
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+        450: {
+            slidesPerView: 2,
+        },
+        640: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        1000: {
+            slidesPerView: 5,
         },
     },
 });

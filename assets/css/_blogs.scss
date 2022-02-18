@@ -1,3 +1,60 @@
-.blogs{
-   
+.blogs .blogs-slider {
+
+    // background-color: var(--lightBg);
+    padding-bottom: 5rem;
+
+    .single-slide {
+        width     : 35rem;
+        text-align: center;
+
+        &:hover .image img {
+            transform: scale(1.2);
+        }
+
+        .image {
+            height       : 25rem;
+            width        : 90%;
+            overflow     : hidden;
+            margin       : 0 auto;
+            margin-bottom: -3rem;
+
+            img {
+                height    : 100%;
+                width     : 100%;
+                object-fit: cover;
+                transition: .2s linear;
+            }
+        }
+
+        .content {
+            padding         : 2rem;
+            padding-top     : 5rem;
+            background-color: var(--white);
+            box-shadow      : 0 0 1.5rem rgba(0, 0, 0, .2);
+
+            h3 {
+                @include title(2rem);
+            }
+
+            p {
+                padding: 1rem 0;
+                @include paragraph(1.4rem);
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: var(--themeColor);
+    }
+
+    .swiper-pagination {
+        bottom   : .1rem;
+        font-size: 2rem;
+        color    : var(--black);
+
+        .swiper-pagination-current {
+            color: var(--themeColor);
+        }
+    }
 }

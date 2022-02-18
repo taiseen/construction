@@ -5,7 +5,8 @@
     }
 
     section,
-    .slide {
+    .slide,
+    .customSection {
         padding: 3rem 5%;
     }
 
@@ -28,7 +29,8 @@
     }
 
     section,
-    .slide {
+    .slide,
+    .customSection {
         padding: 3rem 2rem;
     }
 
@@ -46,6 +48,7 @@
             background-color: var(--white);
             border-top      : var(--border);
             border-bottom   : var(--border);
+            transition      : .2s linear;
             clip-path       : polygon(0 0, 100% 0, 100% 0, 0 0);
 
             &.userClick {
@@ -58,10 +61,8 @@
             }
         }
     }
-
-
-
 }
+
 
 @media (max-width: 768px) {
 
@@ -93,7 +94,9 @@
         }
     }
 
-
+    .contact .row .google-map {
+        height: 40rem;
+    }
 }
 
 @media (max-width: 450px) {
@@ -106,6 +109,10 @@
         padding-top: 4rem !important;
     }
 
+    // .home .slide {
+    //     min-height: 93vh;
+    // }
+
     .contact-info .info {
         padding: 1rem 0;
 
@@ -114,4 +121,7 @@
             line-height: 1 !important;
         }
     }
+
+
+
 }

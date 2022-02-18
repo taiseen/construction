@@ -1,0 +1,31 @@
+.logo-container {
+
+    text-align: center;
+
+    img {
+        height        : 10rem;
+        pointer-events: none;
+        user-select   : none;
+    }
+}
+
+.footer {
+
+
+    text-align: center;
+
+    .links .btn {
+        margin: 0.5rem;
+    }
+
+    .credit {
+        @include title(2rem);
+        margin-top : 2rem;
+        padding-top: 2rem;
+        border-top : .1rem solid var(--themeColor);
+
+        span {
+            color: var(--themeColor);
+        }
+    }
+}

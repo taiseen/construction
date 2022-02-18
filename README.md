@@ -10,8 +10,6 @@
 * CDN - [Swiper Slider](https://swiperjs.com/get-started#use-swiper-from-cdn) ( v-7 ) - CSS + JS 
 * CDN - [Light Gallery](https://cdnjs.com/libraries/lightgallery-js) ( v-1.4 ) - CSS + JS 
 
-
-
 ## Features Have 
 * Responsiveness
 * Responsive Toggle Menu
@@ -31,8 +29,10 @@ What challenges did I face & how did I overcome them?
 5. Focus On Responsiveness
 3. Info side bar, box-shadow effect
 4. search box + login box positioning + responsiveness
+5. Using of Light Gallery slider
+6. Using of Swiper Slider with Interactive way
+ 
+Inspire to learning from [link](https://youtu.be/Lh4ui-FBTzI)
 
-Inspire & Learning From [link](https://youtu.be/Lh4ui-FBTzI)
 
-
-<img src="./assets/img/demo.png"/>
+<img src="https://i.ibb.co/BTFJcMC/Construction.jpg" alt="Demo"/>

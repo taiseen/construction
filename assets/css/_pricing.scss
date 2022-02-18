@@ -1,3 +1,51 @@
-.pricing{
-  
+.pricing {
+
+    background-color: var(--lightBg);
+
+    .box-container {
+
+        @include grid(30rem);
+
+        .box {
+            padding         : 2rem;
+            text-align      : center;
+            border          : var(--border);
+            box-shadow      : var(--boxShadow);
+            background-color: var(--white);
+
+            i {
+                @include fontStyle(3rem, var(--black));
+                height          : 7rem;
+                width           : 7rem;
+                line-height     : 7rem;
+                border-radius   : 50%;
+                margin-bottom   : 2rem;
+                background-color: var(--themeColor);
+            }
+
+            h3 {
+                @include title(2rem);
+                font-weight: normal;
+            }
+
+            .price {
+                @include title(4rem);
+                padding: 1rem 0;
+
+                span {
+                    font-size: 2rem;
+                }
+            }
+
+            .list {
+                padding: 1rem 0;
+
+                p {
+                    padding: .8rem 0;
+                    @include paragraph(1.8rem);
+                }
+
+            }
+        }
+    }
 }

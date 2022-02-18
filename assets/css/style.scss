@@ -24,7 +24,6 @@
     text-transform : capitalize;
     box-sizing     : border-box;
     font-family    : 'Nunito', sans-serif;
-    transition     : all .1s linear;
 }
 
 @import 'mixing';
@@ -61,7 +60,8 @@ Style Scale for all
 but in responsive - its resizing at 991px
 */
 section,
-.slide {
+.slide,
+.customSection {
     padding      : 5rem 10%;
     margin-bottom: 3rem;
 
@@ -84,6 +84,7 @@ section,
     cursor          : pointer;
     text-transform  : capitalize;
     background-color: var(--black);
+    transition      : .2s linear;
     @include fontStyle(1.7rem, var(--white));
 
     &:hover {
@@ -108,4 +109,5 @@ section,
 @import 'pricing';
 @import 'contact';
 @import 'blogs';
+@import 'footer';
 @import 'responsiveness';
