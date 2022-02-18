@@ -154,4 +154,77 @@
             }
         }
     }
+
+    .contact-info {
+        position           : fixed;
+        top                : 0;
+        right              : -100vw;
+        height             : 100%;
+        width              : 35rem;
+        text-align         : center;
+        background-color   : var(--white);
+        z-index            : 1100;
+        padding            : 5rem 2rem 0;
+        // display         : none;
+        transition         : .2s linear;
+
+        &.userClick {
+            // display   : block;
+            right     : 0;
+            box-shadow: 0 0 0 100vw rgba(0, 0, 0, .6);
+        }
+
+        #close-info-btn {
+            position  : absolute;
+            top       : 1rem;
+            right     : 1.5rem;
+            cursor    : pointer;
+            transition: .2s linear;
+            @include fontStyle(3rem, var(--black));
+
+            &:hover {
+                color    : tomato;
+                transform: rotate(90deg);
+            }
+        }
+
+        .firstInfo{
+            padding-top: 8rem !important;
+        }
+
+        .info {
+            padding: 2rem 0;
+
+
+            i {
+                @include iconBox();
+                margin-bottom: 0.5rem;
+            }
+
+            h3 {
+                @include title(2rem);
+                padding: 1rem 0;
+            }
+
+            p {
+                @include paragraph(1.5rem);
+            }
+
+            .email {
+                text-transform: lowercase;
+            }
+        }
+
+        .share {
+            padding-top: 3rem;
+            border-top : var(--border);
+            margin-top : 1rem;
+
+            a {
+                @include iconBox();
+                margin: 0 .3rem;
+            }
+
+        }
+    }
 }

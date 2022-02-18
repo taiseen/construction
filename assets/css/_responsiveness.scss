@@ -47,15 +47,13 @@
 
 @media (max-width: 768px) {
 
-    // mobile navigation start from here...
+    .header {
 
-
-    // transform       : scaleY(0);
-    // transform-origin: top;
-
-    // &.user-click-at-search {
-    //     transform: scaleY(1);
-    // }
+        .search-form,
+        .login-form {
+            width: 90%;
+        }
+    }
 }
 
 @media (max-width: 450px) {}
