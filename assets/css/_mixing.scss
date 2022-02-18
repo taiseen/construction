@@ -22,6 +22,11 @@
     line-height: 1.2;
 }
 
+@mixin fontStyle($size, $color) {
+    font-size: $size;
+    color    : $color;
+}
+
 @mixin iconBox() {
     height          : 5rem;
     width           : 5rem;
@@ -36,5 +41,4 @@
         color           : var(--white);
         background-color: var(--black);
     }
-
 }

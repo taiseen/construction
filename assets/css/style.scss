@@ -36,7 +36,7 @@
 
     6.25% * 10 = 62.5% 
     62.5% == 10px
-*/ 
+*/
 html {
     font-size         : 62.5%;
     overflow-x        : hidden;
@@ -71,7 +71,27 @@ section {
 
 .heading {}
 
+.btn {
+    display         : inline-block;
+    margin-top      : 1rem;
+    padding         : 1rem 3rem;
+    cursor          : pointer;
+    text-transform  : capitalize;
+    background-color: var(--black);
+    @include fontStyle(1.7rem, var(--white));
 
+    &:hover {
+        color           : var(--black);
+        background-color: var(--themeColor);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        top    : 50%;
+        opacity: 0;
+    }
+}
 
 @import 'header';
 @import 'home';
