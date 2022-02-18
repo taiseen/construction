@@ -71,43 +71,11 @@ window.addEventListener('scroll', () => {
 });
 
 
-
-
-// swiper-slider functionality... 
-
-let homeSlider = new Swiper('.home-slider', {
-
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 20,
-
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-    },
-
-    // pagination: {
-    //     el: '.swiper-pagination',
-    //     type: "fraction",
-    //     clickable: true,
-    // },
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-
-    // breakpoints: {
-    //     0: {
-    //         slidesPerView: 1,
-    //     },
-    //     768: {
-    //         slidesPerView: 2,
-    //     },
-    // },
-
-});
-
+/*****************************************************************
+******************************************************************
+******************************************************************/
+const imageContainer = document.querySelector('.projects .box-container');
+lightGallery(imageContainer);
 
 
 /*****************************************************************
@@ -159,3 +127,54 @@ document.addEventListener('DOMContentLoaded', () => {
 //         e.preventDefault();
 //     }
 // }, false);
+
+
+
+
+/*****************************************************************
+******************************************************************
+******************************************************************/
+// swiper-slider functionality... 
+
+let homeSlider = new Swiper('.home-slider', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+
+let clientsReviewsSlider = new Swiper('.reviews-slider', {
+
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        // type: "fraction",
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
+});
+

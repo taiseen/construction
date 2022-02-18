@@ -1,0 +1,58 @@
+.reviews .reviews-slider {
+
+    padding-bottom: 5rem;
+
+    .slider {
+
+        p {
+            padding         : 1.5rem;
+            position        : relative;
+            margin-bottom   : 3rem;
+            background-color: var(--lightBg);
+            line-height     : 1.5 !important;
+            @include paragraph(1.5rem);
+
+            &::before {
+                content   : "";
+                position  : absolute;
+                bottom    : -1rem;
+                left      : 2.5rem;
+                height    : 2rem;
+                width     : 2rem;
+                background: var(--lightBg);
+                transform : rotate(45deg);
+            }
+        }
+
+        .user {
+            display    : flex;
+            align-items: center;
+            gap        : 1.5rem;
+
+            img {
+                height: 7rem;
+                width : 7rem;
+            }
+
+            h3 {
+                @include title(1.7rem);
+            }
+
+            .stars {
+                padding-top: 0.5rem;
+
+                i {
+                    @include fontStyle(1.4rem, var(--themeColor));
+                }
+            }
+        }
+    }
+
+    .swiper-pagination {
+        bottom: .5rem;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: var(--themeColor);
+    }
+}

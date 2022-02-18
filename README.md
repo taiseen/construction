@@ -6,8 +6,11 @@
 * HTML
 * SASS 
 * JavaScript
-* CDN - Font-awesome ( v-5.15.4 ) - CSS 
-* CDN - Swiper Slider ( v-7 ) - CSS + JS 
+* CDN - [Font-awesome](https://cdnjs.com/libraries/font-awesome) ( v-5.15.4 ) - CSS 
+* CDN - [Swiper Slider](https://swiperjs.com/get-started#use-swiper-from-cdn) ( v-7 ) - CSS + JS 
+* CDN - [Light Gallery](https://cdnjs.com/libraries/lightgallery-js) ( v-1.4 ) - CSS + JS 
+
+
 
 ## Features Have 
 * Responsiveness

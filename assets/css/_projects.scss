@@ -1,3 +1,60 @@
-.projects{
-    min-height: 100vh;
+.projects {
+
+    background-color: var(--black);
+
+    .heading {
+        color: var(--white);
+    }
+
+    .box-container {
+        @include grid(38rem);
+
+        .box {
+            cursor: initial;
+
+            &:hover .image img {
+                transform: scale(1.2);
+            }
+
+            .image {
+                height  : 40rem;
+                overflow: hidden;
+
+                img {
+                    height    : 100%;
+                    width     : 100%;
+                    object-fit: cover;
+                    transition: .3s linear;
+                }
+            }
+
+            .content {
+                display         : flex;
+                background-color: var(--white);
+                justify-content : space-between;
+
+                .info {
+                    padding: 1rem 2rem;
+
+                    h3 {
+                        @include title(1.7rem);
+                    }
+
+                    p {
+                        @include paragraph(1.5rem);
+                    }
+                }
+
+                i {
+                    width           : 7.5rem;
+                    cursor          : pointer;
+                    text-align      : center;
+                    line-height     : 7.5rem;
+                    background-color: var(--themeColor);
+                    @include fontStyle(3rem, var(--white));
+                }
+            }
+
+        }
+    }
 }

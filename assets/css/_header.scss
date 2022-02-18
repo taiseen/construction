@@ -129,8 +129,8 @@
 
                 &:hover {
                     color                : var(--themeColor);
-                    text-decoration      : underline;
-                    text-underline-offset: .5rem;
+                    text-decoration      : underline !important;
+                    text-underline-offset: .5rem !important;
                 }
             }
         }
@@ -149,8 +149,8 @@
                 color         : var(--themeColor);
 
                 &:hover {
-                    text-decoration      : underline;
-                    text-underline-offset: .5rem;
+                    text-decoration      : underline !important;
+                    text-underline-offset: .5rem !important;
                 }
             }
         }
@@ -159,7 +159,7 @@
     .contact-info {
         position           : fixed;
         top                : 0;
-        right              : -100vw;
+        right              : -200vw;
         height             : 100%;
         width              : 35rem;
         text-align         : center;
@@ -204,11 +204,12 @@
 
             h3 {
                 @include title(2rem);
-                padding: 1rem 0;
+                padding: 1rem 0 .1rem;
             }
 
             p {
                 @include paragraph(1.5rem);
+                line-height: 1.5;
             }
 
             .email {

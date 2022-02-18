@@ -1,4 +1,5 @@
 .services {
+    margin-bottom   : 0;
     background-color: var(--lightBg);
 
     .box-container {
@@ -13,19 +14,19 @@
             box-shadow      : var(--boxShadow);
             border          : var(--border);
             cursor          : pointer;
-            
-            
+
+
             &:hover {
-                box-shadow      : none;
+                box-shadow: none;
             }
 
-            &:hover img{
+            &:hover img {
                 transform: translateY(-1.5rem);
             }
 
             img {
-                height: 10rem;
-                transition      : .2s linear;
+                height    : 10rem;
+                transition: .2s linear;
             }
 
             h3 {
