@@ -84,6 +84,16 @@
             }
         }
     }
+
+    .about .row {
+        gap: 1rem;
+
+        .content h3 {
+            @include title(3.5rem);
+        }
+    }
+
+
 }
 
 @media (max-width: 450px) {
@@ -94,5 +104,14 @@
 
     .header .contact-info .firstInfo {
         padding-top: 4rem !important;
+    }
+
+    .contact-info .info {
+        padding: 1rem 0;
+
+        p {
+            margin-top : 1rem !important;
+            line-height: 1 !important;
+        }
     }
 }
