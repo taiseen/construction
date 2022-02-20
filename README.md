@@ -32,7 +32,7 @@ What challenges did I face & how did I overcome them?
 5. Using of Light Gallery slider
 6. Using of Swiper Slider with Interactive way
  
-Inspire to learning from [link](https://youtu.be/Lh4ui-FBTzI)
+Inspire to learning from [...](https://youtu.be/Lh4ui-FBTzI)
 
 
 <img src="https://i.ibb.co/BTFJcMC/Construction.jpg" alt="Demo"/>
